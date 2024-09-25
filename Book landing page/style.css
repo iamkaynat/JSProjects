@@ -163,3 +163,103 @@ main p {
     font-weight: 700;
     color: white;
 }
+
+@media screen and (max-width:1400px) {
+    .header {
+        width: 90%;
+        padding-top: 20px;
+    }
+
+    .header_navigation {
+        position: absolute;
+        background-color: var(--primary-color);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: none;
+
+    }
+
+    .header_navigation a {
+        color: var(--accent-color);
+        display: block;
+        margin: 20px 0;
+        text-align: center;
+
+
+    }
+
+    .header .menu-icon {
+        display: block;
+        font-size: 30px;
+        line-height: 45px;
+        cursor: pointer;
+        color: var(--primary-color);
+    }
+
+    .header .close-icon {
+        display: block;
+        z-index: 1;
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: var(--accent-color);
+        cursor: pointer;
+        display: none;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .wrapper aside,
+    .wrapper main {
+        width: 90%;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .book_circle img {
+        max-width: 150px;
+    }
+
+    .book_circle {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        max-width: 300px;
+        max-height: 300px;
+        width: 100%;
+    }
+
+    .book {
+        height: 300px;
+        margin-bottom: 0;
+    }
+
+    main h1 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    .buttons-buy-now,
+    .buttons-read-more {
+        font-size: 16px;
+
+
+    }
+
+    .buttons button {
+        padding: 16px 25px;
+    }
+
+}

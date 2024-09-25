@@ -7,7 +7,7 @@
     <title>Book Landing Page</title>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -16,7 +16,7 @@
             <span>Matt Ridley</span>
             <i class="fa fa-lg fa-paper-plane plane-icon"></i>
         </h2>
-        <nav class="header_navigation">
+        <nav id="header_nav" class="header_navigation">
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Books</a>
@@ -24,8 +24,8 @@
             <a href="#">Contact</a>
 
         </nav>
-        <i class="fa fa-bars menu-icon"></i>
-        <i class="fa fa-times-circle close-icon"></i>
+        <i onclick="toggleNav('block')" class="fa fa-bars menu-icon"></i>
+        <i onclick="toggleNav('none')" id="close-icon" class="fa fa-times-circle close-icon"></i>
     </header>
     <div class="wrapper">
         <aside>
@@ -54,6 +54,7 @@
         </main>
     </div>
     <script src="https://kit.fontawesome.com/11e2c3462e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
