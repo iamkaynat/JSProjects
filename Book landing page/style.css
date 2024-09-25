@@ -1,0 +1,165 @@
+@font-face {
+    font-family: 'Istok Web';
+    src: url(./assets/fonts/IstokWeb-Regular.ttf);
+
+}
+
+@font-face {
+    font-family: 'Istok Web';
+    src: url(./assets/fonts/IstokWeb-Bold.ttf);
+    font-weight: 700;
+
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./assets/fonts/Poppins-Light.ttf);
+    font-weight: 200;
+
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./assets/fonts/Poppins-Bold.ttf);
+    font-weight: 700;
+
+}
+
+:root {
+    --primary-color: #013456;
+    --accent-color: #FAD405;
+
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 81px;
+    max-width: 1231px;
+    margin: 0 auto;
+    font-family: 'Istok Web';
+}
+
+.header_title {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header span {
+    font-weight: 600;
+    font-size: 40px;
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.header .plane-icon {
+    color: var(--accent-color);
+
+}
+
+.header .menu-icon,
+.header .close-icon {
+    display: none;
+}
+
+
+.header_navigation {
+    display: flex;
+    align-items: center;
+    height: 52px;
+    margin-right: 10px;
+}
+
+.header_navigation a {
+    text-decoration: none;
+    margin-left: 29px;
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper aside {
+    width: 50%;
+    margin-top: 46px;
+    position: relative;
+
+}
+
+.wrapper .book_circle {
+    width: 785px;
+    height: 785px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+    right: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book {
+    height: 785px;
+    margin-bottom: 54px;
+}
+
+main {
+    width: 50%;
+    margin-top: 86px;
+    max-width: 571px;
+    font-family: 'Poppins';
+
+}
+
+main h1 {
+    color: var(--primary-color);
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 14px;
+}
+
+main p {
+    font-size: 20px;
+    font-weight: 200px;
+    margin-bottom: 50px;
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    border: none;
+    border-radius: 50px;
+    padding: 16px 47px;
+
+}
+
+.buttons-buy-now {
+    background-color: var(--accent-color);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.buttons-read-more {
+    background-color: var(--primary-color);
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
